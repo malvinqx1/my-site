@@ -1,0 +1,182 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="scss/gl.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/svg/original.svg" type="image/x-icon">
+    <title>Этика Искусственного Интеллекта</title></head>
+    <style>
+      h1 { 
+    font-size: 20px;
+   }
+      a{
+        cursor: pointer;
+      }
+    .preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: black;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #b109ff;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+  .vl {
+    border-left: 1px solid #8604c2;
+    height: 100px;
+    left: 50%;
+    margin-left: 650px;
+    margin-top: 50px;
+  margin-bottom: 50px;
+}
+    </style>
+    <body>
+      <div class="verh">
+        <div class="header">
+        <div class="preloader">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+          </div>
+          
+        <div class="container">
+            <div class="left">
+                <div class="circle">R</div> 
+            </div>  
+            <div class="right">
+                <a href= "menuro.html"><img src="svg/menu.svg"> </a>
+            </div>
+        </div>
+        <div class="ii">
+          <div class="container1">
+            <div class="text1"></div>
+          </div>
+      </div>
+      <div class="arrow">
+        <a href="#vid"><img src="svg/down-arrow (1).svg"></a>Листать вниз
+      </div>
+    </div>
+  </div>
+        <div id="vid"> 
+          <figure>
+            <video width="1000" height="600" preload="auto" autoplay="true" loop="true" muted="muted" id="vid1">
+                <source src="video/Как устроен искусственный интеллект_.mp4" type="video/mp4">
+            </video>
+            <button onclick="mute(this, 'vid1')">Mute</button>
+          </figure>
+        </div> 
+
+        <div class="blok3">
+          <img src="images/anki.jpg" width="480px" height="320px" align="right">
+              <div class="verse">
+                  Искусственный интеллект позволяет
+                  компьютерам обучаться на собственном опыте,
+                  адаптироваться к задаваемым параметрам и
+                  выполнять те задачи, которые раньше были
+                  под силу только человеку. В большинстве
+                  случаев реализации ИИ — от компьютерных
+                  шахматистов до беспилотных автомобилей —
+                  крайне важна возможность глубокого обучения и обработки естественного языка. 
+              </div>
+         </div>
+         <main class='main'>
+          <section class='right_section'>
+        <figure>
+            <video width="520"  preload="auto" autoplay="true" loop="true" muted="muted" id="vid1">
+              <source src="video/ЧТО ЕСЛИ РОБОТ ANKI VECTOR УВИДИТ БОГОМОЛА_ ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ VS БОГОМОЛ (online-video-cutter.com).mp4" type="video/mp4">
+          </video> 
+        </figure>
+          </section>
+          <section class='left_section'>
+            <p><h1>Робот Anki Vector </h1>  - это робот с искусственным интеллектом. Anki Vector самоуправляемый, подключенный к облачным серверам, который всегда остается на связи и готов помочь вам в поиске информации.</p>
+            <div class="arrow1">
+              <a href="#vid"><img src="svg/right-arrow (1).svg"></a>
+            </div>
+            <br />
+          </section>
+        </main> 
+        <div class="neiro">
+          <div class="vl"></div>
+            <div class="pred">
+              <P> <h1>Может ли нейросеть думать как человек...</h1> <br> Мыслительный процесс напрямую связан с наличием сознания. Нейронная сеть, как и любой другой алгоритм машинного обучения, по своей сути является лишь математической функцией, и умеет решать лишь одну конкретную задачу. Нейросеть, которую учили отличать кошек и собак, не сможет отличить медведя от слона, ведь она даже не знала, что такие существуют. Процессы же анализа данных, которые происходят в голове у человека, намного сложнее чем те, что происходят в нейросети, так что даже при наличии данных, сопоставимых по размеру с массивом информации, которую за жизнь получает человек, сегодня обучить нейросеть думать, как человек, невозможно.
+              </P>
+            </div>
+          <div class="vl"></div>
+       </div>
+       <script src="js/buble.js"></script>
+        <script src="js/mute.js"></script>
+            
+        <script>
+            window.onload = function () {
+              document.body.classList.add('loaded_hiding');
+              window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+              }, 500);
+            }
+           
+          </script>
+    </body>
+    </html>
